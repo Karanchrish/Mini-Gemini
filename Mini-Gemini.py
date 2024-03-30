@@ -164,21 +164,20 @@ if selection == "Image Reader":
         response=get_gemini_image(input,image)
         st.write(response)
 
-'''#Database Reader
-if selection == "Database Reader":
-    st.subheader("Database Reader")
-
-    database_name = st.text_input("Database Name: ", key="database")
-    input=st.text_input("Input: ",key="input")
-
-    submit=st.button("Answer me")
-
-    if submit:
-        response=get_gemini_db(input,prompt)
-        if database_name:
-            data = read_sql_query(response, f"{database_name}.db")
-            st.header("The Response is")
-            for row in data:
-                st.subheader(row)
-        else:
-            st.error("Please enter a database name.")'''
+#Database Reader
+#if selection == "Database Reader":
+#    st.subheader("Database Reader")
+#   database_name = st.text_input("Database Name: ", key="database")
+#    input=st.text_input("Input: ",key="input")
+#
+#    submit=st.button("Answer me")
+#
+#    if submit:
+#        response=get_gemini_db(input,prompt)
+#        if database_name:
+#            data = read_sql_query(response, f"{database_name}.db")
+#            st.header("The Response is")
+#           for row in data:
+#                st.subheader(row)
+#        else:
+#            st.error("Please enter a database name.")
