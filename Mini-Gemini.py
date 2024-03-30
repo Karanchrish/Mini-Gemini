@@ -132,7 +132,7 @@ if selection == "Chat Search":
         for role, text in st.session_state['chat_history']:
             st.sidebar.write(f"{role}: {text}")
 
-#PDF Reader
+'''#PDF Reader
 if selection == "PDF Reader":
     st.subheader("PDF Reader")
 
@@ -146,7 +146,7 @@ if selection == "PDF Reader":
     submit = st.button("Tell me about the PDF")
     if submit:
         response = get_gemini_pdf(input, pdf)
-        st.write(response)
+        st.write(response)'''
 
 
 #Image Reader
@@ -164,7 +164,7 @@ if selection == "Image Reader":
         response=get_gemini_image(input,image)
         st.write(response)
 
-#Database Reader
+'''#Database Reader
 if selection == "Database Reader":
     st.subheader("Database Reader")
 
@@ -181,4 +181,4 @@ if selection == "Database Reader":
             for row in data:
                 st.subheader(row)
         else:
-            st.error("Please enter a database name.")
+            st.error("Please enter a database name.")'''
