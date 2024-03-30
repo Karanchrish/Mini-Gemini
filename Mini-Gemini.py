@@ -8,7 +8,7 @@ import pdf2image
 import google.generativeai as genai
 
 
-genai.configure(api_key=("AIzaSyCWmgf5-fCPsQMFsEBm6E86ucAtCyoTORw"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 model_gemini_pro=genai.GenerativeModel("gemini-pro") 
 model_gemini_pro_vision = genai.GenerativeModel('gemini-pro-vision')
@@ -132,7 +132,7 @@ if selection == "Chat Search":
         for role, text in st.session_state['chat_history']:
             st.sidebar.write(f"{role}: {text}")
 
-'''#PDF Reader
+#PDF Reader
 if selection == "PDF Reader":
     st.subheader("PDF Reader")
 
@@ -146,7 +146,7 @@ if selection == "PDF Reader":
     submit = st.button("Tell me about the PDF")
     if submit:
         response = get_gemini_pdf(input, pdf)
-        st.write(response)'''
+        st.write(response)
 
 
 #Image Reader
@@ -165,19 +165,19 @@ if selection == "Image Reader":
         st.write(response)
 
 #Database Reader
-#if selection == "Database Reader":
-#    st.subheader("Database Reader")
-#   database_name = st.text_input("Database Name: ", key="database")
-#    input=st.text_input("Input: ",key="input")
-#
-#    submit=st.button("Answer me")
-#
-#    if submit:
-#        response=get_gemini_db(input,prompt)
-#        if database_name:
-#            data = read_sql_query(response, f"{database_name}.db")
-#            st.header("The Response is")
-#           for row in data:
-#                st.subheader(row)
-#        else:
-#            st.error("Please enter a database name.")
+if selection == "Database Reader":
+    st.subheader("Database Reader")
+   database_name = st.text_input("Database Name: ", key="database")
+    input=st.text_input("Input: ",key="input")
+
+    submit=st.button("Answer me")
+
+    if submit:
+        response=get_gemini_db(input,prompt)
+        if database_name:
+            data = read_sql_query(response, f"{database_name}.db")
+            st.header("The Response is")
+           for row in data:
+                st.subheader(row)
+        else:
+            st.error("Please enter a database name.")
