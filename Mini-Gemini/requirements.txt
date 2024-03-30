@@ -1,8 +1,0 @@
-streamlit
-google-generativeai
-python-dotenv
-pdf2image
-youtube_transcript_api
-pathlib
-SpeechRecognition
-gtts
