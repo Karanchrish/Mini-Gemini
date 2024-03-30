@@ -1,7 +1,3 @@
-from dotenv import load_dotenv
-load_dotenv()
-
-
 import streamlit as st
 import os
 import io
@@ -12,7 +8,7 @@ import pdf2image
 import google.generativeai as genai
 
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=("AIzaSyCWmgf5-fCPsQMFsEBm6E86ucAtCyoTORw"))
 
 model_gemini_pro=genai.GenerativeModel("gemini-pro") 
 model_gemini_pro_vision = genai.GenerativeModel('gemini-pro-vision')
