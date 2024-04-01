@@ -2,6 +2,14 @@
 
 Mini Gemini is a Streamlit web application that utilizes Google's Generative AI models for various tasks including chat search, PDF reading, image analysis, and database analysis.
 
+- 
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshot](#screenshot)
+- [Requirements](#requirements)
+
 ## Features
 
 ### Chat Search
@@ -50,6 +58,16 @@ streamlit run app.py
 2. Follow the prompts and provide necessary inputs (e.g., text, files, database name).
 3. Click on the corresponding button to trigger the action (e.g., "Answer", "Tell me about the PDF").
 4. View the results displayed on the app.
+
+## Requirements
+
+- Python
+- Streamlit
+- API Key (Google)
+- streamlit
+- google-generativeai
+- python-dotenv
+- pdf2image
 
 ## Screenshot
 
