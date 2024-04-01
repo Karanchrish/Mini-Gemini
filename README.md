@@ -71,6 +71,21 @@ streamlit run app.py
 
 ## Screenshot
 
+### Chat_Search
+![Chat_Search](https://github.com/Karanchrish/Mini-Gemini/assets/124337511/34e9ccc2-905b-433a-9e6e-4da9e3a1b26a)
+
+### History_of_Chat_Search
+![History_of_Chat_Search](https://github.com/Karanchrish/Mini-Gemini/assets/124337511/adc568ae-6cf2-487a-bc86-6047af6642b1)
+
+### PDF_Reader
+![PDF_Reader](https://github.com/Karanchrish/Mini-Gemini/assets/124337511/6407a31f-f6fc-46f3-8e9f-d3894789d8d7)
+
+### Image_Reader_1
+![Image_Reader_1](https://github.com/Karanchrish/Mini-Gemini/assets/124337511/2bb67e24-4293-4fdd-a7f7-1174984a2b36)
+
+### Image_Reader_2
+![Image_Reader_2](https://github.com/Karanchrish/Mini-Gemini/assets/124337511/1b411931-b170-4f5d-8d75-e807f6c5d3ad)
+
 ---
 
 Feel free to contact me.
