@@ -1,5 +1,5 @@
 # Mini Gemini
-
+ 
 Mini Gemini is a Streamlit web application that utilizes Google's Generative AI models for various tasks including chat search, PDF reading, image analysis, and database analysis.
 
 - 
